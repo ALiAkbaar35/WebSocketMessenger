@@ -36,6 +36,11 @@ def create_app():
     # Register blueprints
     app.register_blueprint(jobsapi)
     
+    # Create database tables if they don't exist
+    with app.app_context():
+        db.create_all()
+        print("Database tables created")
+    
     # Handle 404 errors
     @app.errorhandler(404)
     def page_not_found(e):
