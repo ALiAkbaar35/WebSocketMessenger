@@ -1,0 +1,31 @@
+/* Custom styles for Job API Service */
+
+/* Enhancing API documentation */
+.endpoint-url {
+  font-family: monospace;
+  background-color: var(--bs-dark);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* API feature icons */
+.api-feature-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Additional spacing utilities */
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+/* JSON response formatting */
+.json-response {
+  max-height: 300px;
+  overflow-y: auto;
+}
